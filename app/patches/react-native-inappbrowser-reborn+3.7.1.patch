@@ -1,0 +1,93 @@
+diff --git a/node_modules/react-native-inappbrowser-reborn/index.d.ts b/node_modules/react-native-inappbrowser-reborn/index.d.ts
+index be53782..4ee75cf 100644
+--- a/node_modules/react-native-inappbrowser-reborn/index.d.ts
++++ b/node_modules/react-native-inappbrowser-reborn/index.d.ts
+@@ -17,6 +17,7 @@ declare module "react-native-inappbrowser-reborn" {
+     preferredBarTintColor?: string;
+     preferredControlTintColor?: string;
+     readerMode?: boolean;
++    allowSwipeDismissal?: boolean;
+     animated?: boolean;
+     modalPresentationStyle?:
+       | "automatic"
+diff --git a/node_modules/react-native-inappbrowser-reborn/ios/RNInAppBrowser.m b/node_modules/react-native-inappbrowser-reborn/ios/RNInAppBrowser.m
+index 2e835ed..8125d4e 100644
+--- a/node_modules/react-native-inappbrowser-reborn/ios/RNInAppBrowser.m
++++ b/node_modules/react-native-inappbrowser-reborn/ios/RNInAppBrowser.m
+@@ -160,6 +160,7 @@ + (BOOL)requiresMainQueueSetup
+   NSDictionary* formSheetPreferredContentSize = [options valueForKey:@"formSheetPreferredContentSize"];
+ 
+   BOOL readerMode = [options[@"readerMode"] boolValue];
++  BOOL allowSwipeDismissal = [options[@"allowSwipeDismissal"] boolValue];
+   BOOL enableBarCollapsing = [options[@"enableBarCollapsing"] boolValue];
+   modalEnabled = [options[@"modalEnabled"] boolValue];
+   animated = [options[@"animated"] boolValue];
+@@ -206,6 +207,42 @@ + (BOOL)requiresMainQueueSetup
+ 
+   UIViewController *ctrl = RCTPresentedViewController();
+   if (modalEnabled) {
++    if (allowSwipeDismissal) {
++      safariVC.modalPresentationStyle = [self getPresentationStyle: modalPresentationStyle];
++      if(animated) {
++        safariVC.modalTransitionStyle = [self getTransitionStyle: modalTransitionStyle];
++      }
++
++      if([modalPresentationStyle isEqualToString:@"formSheet"] && formSheetPreferredContentSize){
++        NSNumber *width = [formSheetPreferredContentSize valueForKey:@"width"];
++        NSNumber *height = [formSheetPreferredContentSize valueForKey:@"height"];
++
++        if(width && height){
++          safariVC.preferredContentSize = CGSizeMake([width doubleValue], [height doubleValue]);
++        }
++      }
++
++      safariVC.presentationController.delegate = self;
++#pragma clang diagnostic push
++#pragma clang diagnostic ignored "-Wpartial-availability"
++#if defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && defined(__IPHONE_13_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_13_0
++      if (@available(iOS 13.0, *)) {
++        [safariVC setModalInPresentation:NO];
++      }
++#if defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && defined(__IPHONE_15_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_15_0
++      if (@available(iOS 15.0, *)) {
++        UISheetPresentationController *sheetPresentationController = safariVC.sheetPresentationController;
++        if (sheetPresentationController != nil) {
++          sheetPresentationController.prefersScrollingExpandsWhenScrolledToEdge = YES;
++        }
++      }
++#endif
++#endif
++#pragma clang diagnostic pop
++      [ctrl presentViewController:safariVC animated:animated completion:nil];
++      return;
++    }
++
+     // This is a hack to present the SafariViewController modally
+     UINavigationController *safariHackVC = [[UINavigationController alloc] initWithRootViewController:safariVC];
+     [safariHackVC setNavigationBarHidden:true animated:false];
+@@ -232,7 +269,7 @@ + (BOOL)requiresMainQueueSetup
+ #pragma clang diagnostic ignored "-Wpartial-availability"
+ #if defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && defined(__IPHONE_13_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_13_0
+     if (@available(iOS 13.0, *)) {
+-      [safariHackVC setModalInPresentation:TRUE];
++      [safariHackVC setModalInPresentation:!allowSwipeDismissal];
+     }
+ #endif
+ #pragma clang diagnostic pop
+@@ -331,6 +368,16 @@ - (void)safariViewControllerDidFinish:(SFSafariViewController *)controller
+   }
+ }
+ 
++- (void)presentationControllerDidDismiss:(UIPresentationController *)presentationController API_AVAILABLE(ios(13.0))
++{
++  if (redirectResolve) {
++    redirectResolve(@{
++      @"type": @"dismiss",
++    });
++  }
++  [self flowDidFinish];
++}
++
+ -(void)flowDidFinish
+ {
+   safariVC = nil;

@@ -1,0 +1,66 @@
+# Local notes and credentials
+agents.md
+**/keystore.properties
+**/keystores/
+*.keystore
+*.jks
+*.p12
+*.mobileprovision
+*.provisionprofile
+.env
+.env.*
+
+# Private exports and generated reports
+exports/
+ios-native/QA/
+*.csv
+*.jsonl
+
+# OS / editor
+.DS_Store
+.idea/
+*.iml
+
+# Node / React Native
+node_modules/
+npm-debug.log
+yarn-error.log
+.metro-health-check*
+coverage/
+
+# Android
+**/android/.gradle/
+**/android/build/
+**/android/app/build/
+**/android/app/.cxx/
+**/android/app/src/main/assets/index.android.bundle
+**/android/app/src/main/res/drawable-*/src_assets_*.png
+**/android/app/src/main/res/raw/keep.xml
+*.apk
+*.aab
+*.ap_
+*.hprof
+
+# iOS / Xcode
+**/Pods/
+**/build/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+**/.xcode.env.local
+
+# Ruby / CocoaPods
+vendor/bundle/
+**/vendor/bundle/
+
+# Local tool state
+.gstack/
+**/.gstack/

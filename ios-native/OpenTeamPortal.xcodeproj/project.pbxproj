@@ -1,0 +1,729 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B00000000000000000000001 /* OpenTeamPortalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000001 /* OpenTeamPortalApp.swift */; };
+		B00000000000000000000002 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000002 /* RootView.swift */; };
+		B00000000000000000000003 /* PortalTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000003 /* PortalTheme.swift */; };
+		B00000000000000000000004 /* PortalModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000004 /* PortalModels.swift */; };
+		B00000000000000000000005 /* SSEParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000005 /* SSEParser.swift */; };
+		B00000000000000000000006 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000006 /* APIClient.swift */; };
+		B00000000000000000000019 /* MockAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000019 /* MockAPIClient.swift */; };
+		B00000000000000000000007 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000007 /* SessionStore.swift */; };
+		B00000000000000000000008 /* PortalCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000008 /* PortalCache.swift */; };
+		B00000000000000000000009 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000009 /* AppViewModel.swift */; };
+		B00000000000000000000010 /* PortalViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000010 /* PortalViewModels.swift */; };
+		B00000000000000000000011 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000011 /* AuthView.swift */; };
+		B00000000000000000000012 /* TeamPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000012 /* TeamPickerView.swift */; };
+		B00000000000000000000013 /* PortalShellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000013 /* PortalShellView.swift */; };
+		B00000000000000000000014 /* ChatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000014 /* ChatDetailView.swift */; };
+		B00000000000000000000015 /* ComposerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000015 /* ComposerView.swift */; };
+		B00000000000000000000016 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000016 /* SettingsView.swift */; };
+		B00000000000000000000017 /* StructuredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000017 /* StructuredView.swift */; };
+		B00000000000000000000018 /* ViewCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000018 /* ViewCompatibility.swift */; };
+		B00000000000000000000100 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000100 /* Assets.xcassets */; };
+		B00000000000000000000101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000101 /* LaunchScreen.storyboard */; };
+		B00000000000000000000200 /* SSEParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000200 /* SSEParserTests.swift */; };
+		B00000000000000000000201 /* PortalAPIDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000201 /* PortalAPIDecodingTests.swift */; };
+		B00000000000000000000202 /* PortalLiveSmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000202 /* PortalLiveSmokeTests.swift */; };
+		B00000000000000000000210 /* PortalAppReviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00000000000000000000210 /* PortalAppReviewUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C00000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000000000000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A00000000000000000000001;
+			remoteInfo = OpenTeamPortal;
+		};
+		C00000000000000000000002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000000000000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A00000000000000000000001;
+			remoteInfo = OpenTeamPortal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F00000000000000000000001 /* OpenTeamPortalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTeamPortalApp.swift; sourceTree = "<group>"; };
+		F00000000000000000000002 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		F00000000000000000000003 /* PortalTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalTheme.swift; sourceTree = "<group>"; };
+		F00000000000000000000004 /* PortalModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalModels.swift; sourceTree = "<group>"; };
+		F00000000000000000000005 /* SSEParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSEParser.swift; sourceTree = "<group>"; };
+		F00000000000000000000006 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		F00000000000000000000019 /* MockAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIClient.swift; sourceTree = "<group>"; };
+		F00000000000000000000007 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		F00000000000000000000008 /* PortalCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalCache.swift; sourceTree = "<group>"; };
+		F00000000000000000000009 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		F00000000000000000000010 /* PortalViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalViewModels.swift; sourceTree = "<group>"; };
+		F00000000000000000000011 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		F00000000000000000000012 /* TeamPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPickerView.swift; sourceTree = "<group>"; };
+		F00000000000000000000013 /* PortalShellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalShellView.swift; sourceTree = "<group>"; };
+		F00000000000000000000014 /* ChatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailView.swift; sourceTree = "<group>"; };
+		F00000000000000000000015 /* ComposerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposerView.swift; sourceTree = "<group>"; };
+		F00000000000000000000016 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F00000000000000000000017 /* StructuredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructuredView.swift; sourceTree = "<group>"; };
+		F00000000000000000000018 /* ViewCompatibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCompatibility.swift; sourceTree = "<group>"; };
+		F00000000000000000000050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F00000000000000000000051 /* OpenTeamPortal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenTeamPortal.entitlements; sourceTree = "<group>"; };
+		F00000000000000000000100 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F00000000000000000000101 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F00000000000000000000200 /* SSEParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSEParserTests.swift; sourceTree = "<group>"; };
+		F00000000000000000000201 /* PortalAPIDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalAPIDecodingTests.swift; sourceTree = "<group>"; };
+		F00000000000000000000202 /* PortalLiveSmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalLiveSmokeTests.swift; sourceTree = "<group>"; };
+		F00000000000000000000210 /* PortalAppReviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalAppReviewUITests.swift; sourceTree = "<group>"; };
+		F00000000000000000000300 /* OpenTeamPortal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenTeamPortal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F00000000000000000000301 /* OpenTeamPortalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenTeamPortalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F00000000000000000000302 /* OpenTeamPortalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenTeamPortalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		P00000000000000000000011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		P00000000000000000000021 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		P00000000000000000000031 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		G00000000000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				G00000000000000000000010 /* OpenTeamPortal */,
+				G00000000000000000000080 /* OpenTeamPortalTests */,
+				G00000000000000000000081 /* OpenTeamPortalUITests */,
+				G00000000000000000000090 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		G00000000000000000000010 /* OpenTeamPortal */ = {
+			isa = PBXGroup;
+			children = (
+				G00000000000000000000011 /* App */,
+				G00000000000000000000012 /* Design */,
+				G00000000000000000000013 /* Models */,
+				G00000000000000000000014 /* Networking */,
+				G00000000000000000000015 /* Persistence */,
+				G00000000000000000000016 /* ViewModels */,
+				G00000000000000000000017 /* Views */,
+				G00000000000000000000018 /* Resources */,
+				F00000000000000000000050 /* Info.plist */,
+				F00000000000000000000051 /* OpenTeamPortal.entitlements */,
+			);
+			path = OpenTeamPortal;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000011 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000001 /* OpenTeamPortalApp.swift */,
+				F00000000000000000000002 /* RootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000012 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000003 /* PortalTheme.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000013 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000004 /* PortalModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000014 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000005 /* SSEParser.swift */,
+				F00000000000000000000006 /* APIClient.swift */,
+				F00000000000000000000019 /* MockAPIClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000015 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000007 /* SessionStore.swift */,
+				F00000000000000000000008 /* PortalCache.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000016 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000009 /* AppViewModel.swift */,
+				F00000000000000000000010 /* PortalViewModels.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000017 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000011 /* AuthView.swift */,
+				F00000000000000000000012 /* TeamPickerView.swift */,
+				F00000000000000000000013 /* PortalShellView.swift */,
+				F00000000000000000000014 /* ChatDetailView.swift */,
+				F00000000000000000000015 /* ComposerView.swift */,
+				F00000000000000000000016 /* SettingsView.swift */,
+				F00000000000000000000017 /* StructuredView.swift */,
+				F00000000000000000000018 /* ViewCompatibility.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000018 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000100 /* Assets.xcassets */,
+				F00000000000000000000101 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000080 /* OpenTeamPortalTests */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000200 /* SSEParserTests.swift */,
+				F00000000000000000000201 /* PortalAPIDecodingTests.swift */,
+				F00000000000000000000202 /* PortalLiveSmokeTests.swift */,
+			);
+			path = OpenTeamPortalTests;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000081 /* OpenTeamPortalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000210 /* PortalAppReviewUITests.swift */,
+			);
+			path = OpenTeamPortalUITests;
+			sourceTree = "<group>";
+		};
+		G00000000000000000000090 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000300 /* OpenTeamPortal.app */,
+				F00000000000000000000301 /* OpenTeamPortalTests.xctest */,
+				F00000000000000000000302 /* OpenTeamPortalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00000000000000000000001 /* OpenTeamPortal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = X00000000000000000000020 /* Build configuration list for PBXNativeTarget "OpenTeamPortal" */;
+			buildPhases = (
+				P00000000000000000000010 /* Sources */,
+				P00000000000000000000011 /* Frameworks */,
+				P00000000000000000000012 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenTeamPortal;
+			productName = OpenTeamPortal;
+			productReference = F00000000000000000000300 /* OpenTeamPortal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A00000000000000000000002 /* OpenTeamPortalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = X00000000000000000000030 /* Build configuration list for PBXNativeTarget "OpenTeamPortalTests" */;
+			buildPhases = (
+				P00000000000000000000020 /* Sources */,
+				P00000000000000000000021 /* Frameworks */,
+				P00000000000000000000022 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D00000000000000000000001 /* PBXTargetDependency */,
+			);
+			name = OpenTeamPortalTests;
+			productName = OpenTeamPortalTests;
+			productReference = F00000000000000000000301 /* OpenTeamPortalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A00000000000000000000003 /* OpenTeamPortalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = X00000000000000000000040 /* Build configuration list for PBXNativeTarget "OpenTeamPortalUITests" */;
+			buildPhases = (
+				P00000000000000000000030 /* Sources */,
+				P00000000000000000000031 /* Frameworks */,
+				P00000000000000000000032 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D00000000000000000000002 /* PBXTargetDependency */,
+			);
+			name = OpenTeamPortalUITests;
+			productName = OpenTeamPortalUITests;
+			productReference = F00000000000000000000302 /* OpenTeamPortalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00000000000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					A00000000000000000000001 = {
+						CreatedOnToolsVersion = 26.4;
+						DevelopmentTeam = P344GMZDRA;
+					};
+					A00000000000000000000002 = {
+						CreatedOnToolsVersion = 26.4;
+						TestTargetID = A00000000000000000000001;
+					};
+					A00000000000000000000003 = {
+						CreatedOnToolsVersion = 26.4;
+						TestTargetID = A00000000000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = X00000000000000000000010 /* Build configuration list for PBXProject "OpenTeamPortal" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = G00000000000000000000000;
+			productRefGroup = G00000000000000000000090 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A00000000000000000000001 /* OpenTeamPortal */,
+				A00000000000000000000002 /* OpenTeamPortalTests */,
+				A00000000000000000000003 /* OpenTeamPortalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		P00000000000000000000012 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00000000000000000000100 /* Assets.xcassets in Resources */,
+				B00000000000000000000101 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		P00000000000000000000022 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		P00000000000000000000032 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		P00000000000000000000010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00000000000000000000001 /* OpenTeamPortalApp.swift in Sources */,
+				B00000000000000000000002 /* RootView.swift in Sources */,
+				B00000000000000000000003 /* PortalTheme.swift in Sources */,
+				B00000000000000000000004 /* PortalModels.swift in Sources */,
+				B00000000000000000000005 /* SSEParser.swift in Sources */,
+				B00000000000000000000006 /* APIClient.swift in Sources */,
+				B00000000000000000000019 /* MockAPIClient.swift in Sources */,
+				B00000000000000000000007 /* SessionStore.swift in Sources */,
+				B00000000000000000000008 /* PortalCache.swift in Sources */,
+				B00000000000000000000009 /* AppViewModel.swift in Sources */,
+				B00000000000000000000010 /* PortalViewModels.swift in Sources */,
+				B00000000000000000000011 /* AuthView.swift in Sources */,
+				B00000000000000000000012 /* TeamPickerView.swift in Sources */,
+				B00000000000000000000013 /* PortalShellView.swift in Sources */,
+				B00000000000000000000014 /* ChatDetailView.swift in Sources */,
+				B00000000000000000000015 /* ComposerView.swift in Sources */,
+				B00000000000000000000016 /* SettingsView.swift in Sources */,
+				B00000000000000000000017 /* StructuredView.swift in Sources */,
+				B00000000000000000000018 /* ViewCompatibility.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		P00000000000000000000020 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00000000000000000000200 /* SSEParserTests.swift in Sources */,
+				B00000000000000000000201 /* PortalAPIDecodingTests.swift in Sources */,
+				B00000000000000000000202 /* PortalLiveSmokeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		P00000000000000000000030 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00000000000000000000210 /* PortalAppReviewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D00000000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A00000000000000000000001 /* OpenTeamPortal */;
+			targetProxy = C00000000000000000000001 /* PBXContainerItemProxy */;
+		};
+		D00000000000000000000002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A00000000000000000000001 /* OpenTeamPortal */;
+			targetProxy = C00000000000000000000002 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		X00000000000000000000011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		X00000000000000000000012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		X00000000000000000000021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OpenTeamPortal/OpenTeamPortal.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = P344GMZDRA;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = OpenTeamPortal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.openteam.portal;
+				PRODUCT_MODULE_NAME = OpenTeamPortal;
+				PRODUCT_NAME = OpenTeamPortal;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		X00000000000000000000022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OpenTeamPortal/OpenTeamPortal.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = P344GMZDRA;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = OpenTeamPortal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.openteam.portal;
+				PRODUCT_MODULE_NAME = OpenTeamPortal;
+				PRODUCT_NAME = OpenTeamPortal;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		X00000000000000000000031 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openteam.portal.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenTeamPortal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OpenTeamPortal";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		X00000000000000000000032 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openteam.portal.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenTeamPortal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OpenTeamPortal";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		X00000000000000000000041 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openteam.portal.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = OpenTeamPortal;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		X00000000000000000000042 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openteam.portal.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = OpenTeamPortal;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		X00000000000000000000010 /* Build configuration list for PBXProject "OpenTeamPortal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				X00000000000000000000011 /* Debug */,
+				X00000000000000000000012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		X00000000000000000000020 /* Build configuration list for PBXNativeTarget "OpenTeamPortal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				X00000000000000000000021 /* Debug */,
+				X00000000000000000000022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		X00000000000000000000030 /* Build configuration list for PBXNativeTarget "OpenTeamPortalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				X00000000000000000000031 /* Debug */,
+				X00000000000000000000032 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		X00000000000000000000040 /* Build configuration list for PBXNativeTarget "OpenTeamPortalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				X00000000000000000000041 /* Debug */,
+				X00000000000000000000042 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A00000000000000000000000 /* Project object */;
+}

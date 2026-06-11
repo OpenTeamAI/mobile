@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 240 72">
+  <title>Amazon Seller</title>
+  <rect width="240" height="72" rx="12" fill="#fff" />
+  <text
+    x="22"
+    y="38"
+    fill="#111827"
+    font-family="Inter, Arial, sans-serif"
+    font-size="25"
+    font-weight="700"
+    letter-spacing="0"
+  >amazon</text>
+  <text
+    x="128"
+    y="38"
+    fill="#374151"
+    font-family="Inter, Arial, sans-serif"
+    font-size="22"
+    font-weight="600"
+    letter-spacing="0"
+  >seller</text>
+  <path
+    fill="none"
+    stroke="#ff9900"
+    stroke-linecap="round"
+    stroke-width="4"
+    d="M68 50c26 8 61 7 89-2"
+  />
+  <path fill="#ff9900" d="M153 45l13 1.5-9.4 8.8 2-5.1-5.6-5.2Z" />
+</svg>

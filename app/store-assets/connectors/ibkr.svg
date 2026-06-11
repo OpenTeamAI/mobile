@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 180 72">
+  <title>IBKR</title>
+  <rect width="180" height="72" rx="12" fill="#fff" />
+  <text
+    x="22"
+    y="47"
+    fill="#0f172a"
+    font-family="Inter, Arial, sans-serif"
+    font-size="40"
+    font-weight="800"
+    letter-spacing="0"
+  >IBKR</text>
+  <path fill="#16a34a" d="M22 56h136v6H22z" />
+  <path fill="#16a34a" d="M16 50h6v12h-6zM158 50h6v12h-6z" />
+</svg>
