@@ -1,0 +1,45 @@
+default_platform(:android)
+
+platform :android do
+  package_name = "com.openteam.portal"
+  json_key = ENV["SUPPLY_JSON_KEY"] || "fastlane/play/google-play-service-account.json"
+  release_aab = ENV["OPENTEAM_AAB_PATH"] || "android/app/build/outputs/bundle/release/app-release.aab"
+
+  desc "Build the signed Android App Bundle for Google Play"
+  lane :build_play_bundle do
+    sh("npm run android:bundle")
+  end
+
+  desc "Upload Google Play store metadata and screenshots only"
+  lane :upload_play_metadata do
+    upload_to_play_store(
+      package_name: package_name,
+      json_key: json_key,
+      skip_upload_aab: true,
+      skip_upload_apk: true,
+      skip_upload_changelogs: true
+    )
+  end
+
+  desc "Upload the signed AAB to Google Play internal testing as a draft"
+  lane :upload_internal_draft do
+    upload_to_play_store(
+      package_name: package_name,
+      json_key: json_key,
+      aab: release_aab,
+      track: "internal",
+      release_status: "draft"
+    )
+  end
+
+  desc "Upload the signed AAB to Google Play production as a draft"
+  lane :upload_production_draft do
+    upload_to_play_store(
+      package_name: package_name,
+      json_key: json_key,
+      aab: release_aab,
+      track: "production",
+      release_status: "draft"
+    )
+  end
+end

@@ -1,5 +1,7 @@
 # Local notes and credentials
 agents.md
+app/fastlane/play/*.json
+app/fastlane/play/*.p12
 **/keystore.properties
 **/keystores/
 *.keystore

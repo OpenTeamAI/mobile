@@ -1,0 +1,10 @@
+OpenTeam is a business workspace for teams that need people and AI to work together across files, conversations, tasks, and connected systems.
+
+Use OpenTeam on Android to:
+- Access your team workspace on the go
+- Review files, tasks, and shared context
+- Continue business workflows from mobile
+- Coordinate with teammates through the OpenTeam workspace
+- Work with connected systems authorized by your team
+
+OpenTeam is built for company workspaces. A valid OpenTeam account is required.
